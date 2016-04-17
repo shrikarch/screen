@@ -1,7 +1,43 @@
 @font-face {
     font-family: josefin;
-    src: url(JosefinSans-Regular.ttf);
+    src: url(../resources/JosefinSans-Regular.ttf);
 }
-.body{
+body{
     font-family: josefin;
+    background-color: #000000;
+    color: #fff;
+}
+.twitter-wrapper{
+    width: 85%;
+}
+.tweet-container{
+    margin-left: 15px;
+    margin-top: 30px;
+}.tweet-container .icon .fa-twitter{
+    color: #0084b4;
+    font-size: 55px;
+}.tweet-container .icon{
+    margin-bottom: 7px;
+}
+.tweet-container .tweet-stats{
+    margin: 10px 0px;
+}
+.tweet-container .fa-heart{
+    margin-left: 30px;
+}
+.tweet-container .fa-heart, .tweet-container .fa-retweet{
+    font-size: 22px;
+}
+.entry{
+    font-size: 20px;
+}
+.each-tweet-container{
+    padding: 15px 0px;
+    border-bottom: 1px solid #aaa;
+}
+.color-red{
+    color: #d83232;
+}
+.color-cyan{
+    color: #4bd4d4;
 }
