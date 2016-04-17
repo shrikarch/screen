@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <script src="script/jquery.js"></script>
+        <script src="script/annyang.min.js"></script>
+        <!--<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>-->
+    </head>
+    <body>
+        <div id="printer">
+            <h1>
+                Stuff Prints here
+            </h1>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                if (annyang) {
+
+                    console.log('adding commands');
+                    var weather = function(){
+                        console.log('printing weather');
+                    };
+                    var news = function(){
+                        console.log('news');
+                    };
+                    var gmail = function(){
+                        console.log('gmail');
+                    };
+                    var twitter = function(){
+                        console.log('twitter');
+                    };
+                    var stocks = function(){
+                        console.log('stocks');
+                    };
+
+                    var commands = {
+                        '(show me) (todays) weather': weather,
+                        '(show me) (todays) news': news,
+                        '(show me) (my) (g)(e)mail': gmail,
+                        '(show me) (my) twitter': twitter,
+                        '(show me) (my) tweets': twitter,
+                        '(show me) (todays) stock(s)': stocks,
+                    };
+
+                    console.log('registering annyang commands');
+                    annyang.debug();
+                    annyang.addCommands(commands);
+
+                    console.log('starting annyang');
+                    annyang.start();
+                }
+            });
+        </script>
+    </body>
+</html>
