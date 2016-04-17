@@ -4,7 +4,7 @@ $(document).ready(function(){
         console.log('adding commands');
         var weather = function(){
             $.ajax({
-                url: 'https://api.forecast.io/forecast/12d4889403f489a27c7c993e7e0ad511/37.8267,-122.423',
+                url: 'http://api.openweathermap.org/data/2.5/weather?appid=efa17477a7e8b2723afdbee014ae0fba&q=London',
                 success: function(res) { console.log(res) }
             });
         };
