@@ -9,7 +9,10 @@ $(document).ready(function(){
             });
         };
         var news = function(){
-            console.log('news');
+            $.ajax({
+                url: 'http://content.guardianapis.com/search?api-key=test',
+                success: function(res) { console.log(res) }
+            });
         };
         var gmail = function(){
             console.log('gmail');
@@ -18,7 +21,19 @@ $(document).ready(function(){
             console.log('twitter');
         };
         var stocks = function(){
-            console.log('stocks');
+            $.ajax({
+                url: 'http://crossorigin.me/http://finance.yahoo.com/webservice/v1/symbols/AAPL/quote?format=json',
+                success: function(res) { console.log("Apple: " + res) }
+            });
+            $.ajax({
+                url: 'http://crossorigin.me/http://finance.yahoo.com/webservice/v1/symbols/GOOG/quote?format=json',
+                success: function(res) { console.log("Google Inc: " + res) }
+            });
+            $.ajax({
+                url: 'http://crossorigin.me/http://finance.yahoo.com/webservice/v1/symbols/CMG/quote?format=json',
+                success: function(res) { console.log("Chipotle Mexican Grill: " + res) }
+            });
+
         };
 
         var commands = {
