@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/style.css">
 
         <script src="script/jquery.js"></script>
         <script src="script/annyang.min.js"></script>
@@ -18,10 +18,57 @@
     </head>
     <body>
         <div id="printer">
-            <div class="container-fluid tweet-container">
+            <div class="container-fluid uni-container">
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="twitter-wrapper">
+                        <div class="weather-wrapper std-left-margin">
+                            <p>
+                                <span class="temp-int">59</span>
+                                <span class="temp-unit">&deg;</span>
+                                <span class="fa fa-cloud"></span>
+                                <span class="temp_rain"><span class="fa fa-umbrella"></span>15%</span>
+                            </p>
+                            <p class="extended-weather">Partly cloudy until tomorrow morning</p>
+                        </div>
+                        <div class="news-wrapper std-left-margin">
+                            <h2>NEWS</h2>
+                            <div class="each-news">
+                                <div class="news-head">
+                                    <h4><strong>Lorem Ipsum Dolor Sit Amet</strong></h4>
+                                </div>
+                                <div class="news-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas reiciendis provident ipsam, iste impedit quia in doloribus, hic nam, ratione suscipit. Perferendis, iusto quaerat ex fugit dolores dicta maiores enim.</p>
+                                </div>
+                            </div>
+                            <div class="each-news">
+                                <div class="news-head">
+                                    <h4><strong> hic nam, ratione suscipit. Perferendis</strong></h4>
+                                </div>
+                                <div class="news-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas reiciendis provident ipsam, iste impedit quia in doloribus, hic nam, ratione suscipit. Perferendis, iusto quaerat ex fugit dolores dicta maiores enim.</p>
+                                </div>
+                            </div>
+                            <div class="each-news">
+                                <div class="news-head">
+                                    <h4><strong> Voluptas reiciendis provident ipsam</strong></h4>
+                                </div>
+                                <div class="news-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas reiciendis provident ipsam, iste impedit quia in doloribus, hic nam, ratione suscipit. Perferendis, iusto quaerat ex fugit dolores dicta maiores enim.</p>
+                                </div>
+                            </div>
+                            <div class="each-news">
+                                <div class="news-head">
+                                    <h4><strong>Perferendis, iusto quaerat ex fugit dolores</strong></h4>
+                                </div>
+                                <div class="news-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas reiciendis provident ipsam, iste impedit quia in doloribus, hic nam, ratione suscipit. Perferendis, iusto quaerat ex fugit dolores dicta maiores enim.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 "></div>
+                    <div class="col-md-4 ">
+                        <div class="twitter-wrapper center-block hidden"  id="twitter-candy">
                             <div class="icon text-center">
                                 <span class="fa fa-twitter"></span>
                             </div>
@@ -36,7 +83,7 @@
                                     </div>
                                     <div class="tweet-footer">
                                         <div class="row">
-                                            <div class="col-md-6">@username</div>
+                                            <div class="col-md-6 tweet-username">@username</div>
                                             <div class="col-md-6 text-right">2.10 PM - 5 Apr 16</div>
                                         </div>
                                     </div>
@@ -53,7 +100,7 @@
                                     </div>
                                     <div class="tweet-footer">
                                         <div class="row">
-                                            <div class="col-md-6">@username</div>
+                                            <div class="col-md-6 tweet-username">@username</div>
                                             <div class="col-md-6 text-right">2.10 PM - 5 Apr 16</div>
                                         </div>
                                     </div>
@@ -70,32 +117,111 @@
                                     </div>
                                     <div class="tweet-footer">
                                         <div class="row">
-                                            <div class="col-md-6">@username</div>
+                                            <div class="col-md-6 tweet-username">@username</div>
                                             <div class="col-md-6 text-right">2.10 PM - 5 Apr 16</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
+                        <div class="gmail-wrapper std-right-margin" id="gmail-candy">
+                            <h1><span class="fa fa-envelope-o"></span> GMail</h1>
+                            <div class="each-mail">
+                                <div class="mail-subject">
+                                    <h2>This is your subject line yo!</h2>
+                                </div>
+                                <div class="mail-prev">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptate eveniet eum iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, impedit, reiciendis! </p>
+                                </div>
+                                <div class="mail-info">
+                                    By <span class="sender"><strong>John Doe</strong></span> <span class="time">12 Mins Ago</span>
+                                </div>
+                            </div>
+                            <div class="each-mail">
+                                <div class="mail-subject">
+                                    <h2>This is your subject line yo!</h2>
+                                </div>
+                                <div class="mail-prev">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptate eveniet eum iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, impedit, reiciendis! </p>
+                                </div>
+                                <div class="mail-info">
+                                    By <span class="sender"><strong>John Doe</strong></span> <span class="time">12 Mins Ago</span>
+                                </div>
+                            </div>
+                            <div class="each-mail">
+                                <div class="mail-subject">
+                                    <h2>This is your subject line yo!</h2>
+                                </div>
+                                <div class="mail-prev">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptate eveniet eum iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, impedit, reiciendis! </p>
+                                </div>
+                                <div class="mail-info">
+                                    By <span class="sender"><strong>John Doe</strong></span> <span class="time">12 Mins Ago</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-7"></div>
-                    <div class="col-md-2 text-right" id="stock-display">
-                        <div class="stock-content">
-                            <h4 class="">STOCKS</h4> <!-- Code / up|down / price  / ticker-->
-                            <div class="stocks-content">
-                                <div class="each-stock">
-                                    <p>
-                                        <span class="stock-firm-code">COX</span> 
-                                        <span class="fa fa-caret-up"></span>
-                                        <span class="stock-currency">$</span>
-                                        <span class="stock-price">120</span>
-                                        <span class="stock-ticker-code">AAPL</span>
-                                    </p>
-                                </div>
+                    <div class="col-md-6 hidden" id="face-buffer"></div>
+                    <div class="col-md-1 "></div>
+                    <div class="col-md-3 text-right">
+                        <div class="clock-wrapper std-right-margin">
+                            <div class="clock">
+                                <p class="clock-time">3:48</p>
+                                <p class="clock-day">Saturday</p>
+                                <p class="clock-date">16th April</p>
                             </div>
                         </div>
+                        <div class="stock-wrapper">
+                            <h2 class="">STOCKS</h2> <!-- Code / up|down / price  / ticker-->
+                            <div class="each-stock">
+                                <p>
+                                    <span class="stock-firm-code">COX</span> 
+                                    <span class="fa fa-caret-up"></span>
+                                    <span class="stock-currency">$</span>
+                                    <span class="stock-price">120</span>
+                                    <span class="stock-ticker-code">AAPL</span>
+                                </p>
+                            </div>
+                            <div class="each-stock">
+                                <p>
+                                    <span class="stock-firm-code">IBM</span> 
+                                    <span class="fa fa-caret-up"></span>
+                                    <span class="stock-currency">$</span>
+                                    <span class="stock-price">149</span>
+                                    <span class="stock-ticker-code">AAPL</span>
+                                </p>
+                            </div>
+                            <div class="each-stock">
+                                <p>
+                                    <span class="stock-firm-code">IRL</span> 
+                                    <span class="fa fa-caret-up"></span>
+                                    <span class="stock-currency">$</span>
+                                    <span class="stock-price">160</span>
+                                    <span class="stock-ticker-code">CMLP</span>
+                                </p>
+                            </div>
+                            <div class="each-stock">
+                                <p>
+                                    <span class="stock-firm-code">TYS</span> 
+                                    <span class="fa fa-caret-up"></span>
+                                    <span class="stock-currency">$</span>
+                                    <span class="stock-price">120</span>
+                                    <span class="stock-ticker-code">AAPL</span>
+                                </p>
+                            </div>
+                            <div class="each-stock">
+                                <p>
+                                    <span class="stock-firm-code">SSL</span> 
+                                    <span class="fa fa-caret-up"></span>
+                                    <span class="stock-currency">$</span>
+                                    <span class="stock-price">120</span>
+                                    <span class="stock-ticker-code">AAPL</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-right hidden" id="stock-candy">
+
 
                     </div>
                 </div>
