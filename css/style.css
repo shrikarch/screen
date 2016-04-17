@@ -108,6 +108,39 @@ body {
   margin-top: -30px;
   font-size: 22px;
 }
+.uni-container .big-weather-wrapped .major-view .temp-int {
+  font-size: 100px;
+}
+.uni-container .big-weather-wrapped .major-view .temp-unit {
+  font-sizE: 100px;
+}
+.uni-container .big-weather-wrapped .major-view .temp_rain {
+  padding-left: 20px;
+  font-size: 50px;
+  color: rgba(226, 224, 224, 0.8);
+}
+.uni-container .big-weather-wrapped .major-view .fa-cloud {
+  padding-left: 15px;
+  color: #b2b2b2;
+  font-size: 80px;
+}
+.uni-container .big-weather-wrapped .extended-weather {
+  margin-top: -30px;
+  font-size: 35px;
+}
+.uni-container .big-weather-wrapped .week-weather th {
+  padding: 0px 20px;
+}
+.uni-container .big-weather-wrapped .week-weather .temp-row td {
+  padding: 0px 22.5px;
+}
+.uni-container .big-weather-wrapped .week-weather .cloud-row td {
+  margin-left: -20px;
+}
+.uni-container .big-weather-wrapped .week-weather .days {
+  font-size: 23px;
+  margin: 0px;
+}
 .uni-container .news-wrapper {
   padding-top: 15px;
 }

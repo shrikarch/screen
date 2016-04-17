@@ -7,6 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/weather-icons.min.css">
+        <link rel="stylesheet" href="css/weather-icons-wind.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
 
@@ -68,6 +70,95 @@
                     </div>
                     <div class="col-md-1 "></div>
                     <div class="col-md-4 ">
+                        <div class="big-weather-wrapped">
+                            <p class="text-center major-view">
+                                <span class="temp-int">59</span>
+                                <span class="temp-unit">&deg;</span>
+                                <span class="fa fa-cloud"></span>
+                                <span class="temp_rain"><span class="fa fa-umbrella"></span>15%</span>
+                            </p>
+                            <p class="extended-weather text-center">Partly cloudy until tomorrow morning</p>
+                            <div class="week-weather" style="padding-left:40px;">
+                                <table class="text-center">
+                                    <tr>
+                                        <th><span class="day-label">MON</span></th>
+                                        <th><span class="day-label">TUE</span></th>
+                                        <th><span class="day-label">WED</span></th>
+                                        <th><span class="day-label">THR</span></th>
+                                        <th><span class="day-label">FRI</span></th>
+                                        <th><span class="day-label">SAT</span></th>
+                                        <th><span class="day-label">SUN</span></th>
+                                    </tr>
+                                    <tr class="temp-row">
+                                        <td>
+                                            <span class="days mon">
+                                                <span class="temp-int">59</span>
+                                                <span class="temp-unit">&deg;</span>
+                                            </span>
+                                        </td>
+                                        <td> 
+                                            <span class="days tue">
+                                                <span class="temp-int">59</span>
+                                                <span class="temp-unit">&deg;</span>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="days wed">
+                                                <span class="temp-int">59</span>
+                                                <span class="temp-unit">&deg;</span>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="days thurs">
+                                                <span class="temp-int">59</span>
+                                                <span class="temp-unit">&deg;</span>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="days fri">
+                                                <span class="temp-int">59</span>
+                                                <span class="temp-unit">&deg;</span>
+                                            </span>
+                                        </td>
+                                        <td> 
+                                            <span class="days sat">
+                                                <span class="temp-int">59</span>
+                                                <span class="temp-unit">&deg;</span>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="days sun">
+                                                <span class="temp-int">59</span>
+                                                <span class="temp-unit">&deg;</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="cloud-row">
+                                        <td class="cloud">
+                                            <i class="wi wi-day-cloudy"></i> 
+                                        </td>
+                                        <td class="cloud">
+                                            <span class="fa fa-cloud"></span>
+                                        </td>
+                                        <td class="cloud">
+                                            <span class="fa fa-cloud"></span>
+                                        </td>
+                                        <td class="cloud">
+                                            <span class="fa fa-cloud"></span>
+                                        </td>
+                                        <td class="cloud">
+                                            <span class="fa fa-cloud"></span>
+                                        </td>
+                                        <td class="cloud">
+                                            <span class="fa fa-cloud"></span>
+                                        </td>
+                                        <td class="cloud">
+                                            <span class="fa fa-cloud"></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                         <div class="twitter-wrapper center-block hidden"  id="twitter-candy">
                             <div class="icon text-center">
                                 <span class="fa fa-twitter"></span>
@@ -124,7 +215,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="gmail-wrapper std-right-margin" id="gmail-candy">
+                        <div class="gmail-wrapper std-right-margin hidden" id="gmail-candy">
                             <h1><span class="fa fa-envelope-o"></span> GMail</h1>
                             <div class="each-mail">
                                 <div class="mail-subject">
